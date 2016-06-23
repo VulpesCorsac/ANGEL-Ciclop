@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ciclop</class>
+ <widget class="QMainWindow" name="Ciclop">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>401</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ciclop v1.0.0</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBoxMonochromatorSettingsAndOutput">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>381</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Settings and Output</string>
+    </property>
+    <widget class="QTabWidget" name="tabWidgetMonochromatorSettingsAndOutput">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>361</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="MonochromatorInitial">
+      <attribute name="title">
+       <string>Initial</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBoxMonochromatorInitialSettings">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>341</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Initial</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>326</width>
+          <height>125</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutMonochromatorInitial">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorStepDenominatorAndGrating">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorStepDenominator">
+             <item>
+              <widget class="QLabel" name="labelMonochromatorStepDenominator">
+               <property name="text">
+                <string>Step Denominator</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxMonochtomatorStepDenominator"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorGrating">
+             <item>
+              <widget class="QLabel" name="labelMonochtomatorGrating">
+               <property name="text">
+                <string>Grating</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxMonochromatorGrating"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorCurrentDisplayNumber">
+           <item>
+            <widget class="QLabel" name="labelMonochromatorCurrentDisplayNumber">
+             <property name="text">
+              <string>Current Display Number</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="doubleSpinBoxMonochromatorCurrentDisplayNumber">
+             <property name="minimum">
+              <double>100.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>1300.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.020000000000000</double>
+             </property>
+             <property name="value">
+              <double>555.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonMonochromatorCurrentDisplayNumberAction">
+             <property name="text">
+              <string>Action</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorGotoAndExtraFine">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorGoto">
+             <item>
+              <widget class="QLabel" name="labelMonochromatorGoto">
+               <property name="text">
+                <string>Goto</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBoxMonochromatorGoto">
+               <property name="minimum">
+                <double>100.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>1300.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.020000000000000</double>
+               </property>
+               <property name="value">
+                <double>555.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonMonochromatorGoto">
+               <property name="text">
+                <string>Goto</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxMonochromatorMoveExtraFine">
+             <property name="text">
+              <string>Extra fine</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorInitialMovings">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorMovingsLess">
+             <item>
+              <widget class="QPushButton" name="pushButtonMonochromatorMoveCoarseLess">
+               <property name="text">
+                <string>Coarse Less</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonMonochromatorMoveFineLess">
+               <property name="text">
+                <string>Fine Less</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorMovingsMore">
+             <item>
+              <widget class="QPushButton" name="pushButtonMonochromatorMoveFineMore">
+               <property name="text">
+                <string>Fine More</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonMonochromatorMoveCoarseMore">
+               <property name="text">
+                <string>Coarse More</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="MonochromatorWavelength">
+      <attribute name="title">
+       <string>Wavelength</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBoxMonochromatorWavelength">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>231</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Wavelength</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>216</width>
+          <height>115</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutMonochromatorWavelength">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorWavelengthModeAndCurrentAndBoarders">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayoutMonochromatorWavelengthModeAndCurrent">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorWavelengthMode">
+               <item>
+                <widget class="QLabel" name="labelMonochromatorWavelengthMode">
+                 <property name="text">
+                  <string>Mode</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="comboBoxMonochromatorWavelengthMode"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayoutMonochromatorWavelengthCurrent">
+               <item>
+                <widget class="QLabel" name="labelMonochromatorCurrentWavelength">
+                 <property name="text">
+                  <string>Current Wavelength</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="doubleSpinBoxMonochromatorWavelengthCurrentWavelength">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimum">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1300.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>555.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="horizontalLayoutMonochromatorWavelengthWavelengthBoarders">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorWavelengthWavelengthFrom">
+               <item>
+                <widget class="QLabel" name="labelMonochromatorWavelengthFrom">
+                 <property name="text">
+                  <string>From</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="doubleSpinBoxMonochromatorWavelengthFrom">
+                 <property name="minimum">
+                  <double>100.000000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1300.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.020000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>555.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorWavelengthWavelengthTo">
+               <item>
+                <widget class="QLabel" name="labelMonochromatorWavelengthTo">
+                 <property name="text">
+                  <string>To</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="doubleSpinBoxMonochromatorWavelengthTo">
+                 <property name="minimum">
+                  <double>100.000000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1300.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.020000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>555.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorWavelengthWavelengthStep">
+               <item>
+                <widget class="QLabel" name="labelMonochromatorWavelengthStep">
+                 <property name="text">
+                  <string>Step</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="doubleSpinBoxMonochromatorWavelengthStep">
+                 <property name="minimum">
+                  <double>-1300.000000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1300.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>10.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorWavelengthWavelengthWaitFor">
+           <item>
+            <widget class="QLabel" name="labelMonochromatorWaitAfter">
+             <property name="text">
+              <string>Wait</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBoxMonochromatorWaitAfter">
+             <property name="maximum">
+              <number>60000</number>
+             </property>
+             <property name="singleStep">
+              <number>500</number>
+             </property>
+             <property name="value">
+              <number>5000</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelMonochromatorWaitAfterMs">
+             <property name="text">
+              <string>ms</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>160</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonGo">
+             <property name="text">
+              <string>Go</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>381</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorConnection">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorCom">
+       <item>
+        <widget class="QLabel" name="labelMonochromatorCom">
+         <property name="text">
+          <string>COM</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxMonochromatorCom"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonMonochromatorComAction">
+         <property name="text">
+          <string>Action</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutMonochromatorType">
+       <item>
+        <widget class="QLabel" name="labelMonochromatorType">
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxMonochromatorType"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuStress_Test">
+    <property name="title">
+     <string>Stress Test</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSMSD_4_2_UI">
+    <property name="title">
+     <string>SMSD 4.2 UI</string>
+    </property>
+   </widget>
+   <addaction name="menuStress_Test"/>
+   <addaction name="menuSMSD_4_2_UI"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
