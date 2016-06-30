@@ -45,16 +45,21 @@ private:
 
 public:
     explicit Ciclop(QWidget *parent = 0);
+    explicit Ciclop(Monochromator* new_monochromator);
     ~Ciclop();
 
 private slots:
     void on_pushButtonMonochromatorComAction_clicked();
-
     void on_pushButtonMonochromatorCurrentDisplayNumberAction_clicked();
-
     void on_comboBoxMonochromatorWavelengthMode_currentTextChanged(const QString &arg1);
-
     void getCurrentDisplayNumberChanged(const double &newDisplayNumber);
+    void on_comboBoxMonochtomatorStepDenominator_currentTextChanged(const QString &arg1);
+    void on_comboBoxMonochromatorGrating_currentTextChanged(const QString &arg1);
+    void on_pushButtonMonochromatorMoveCoarseLess_clicked();
+    void on_pushButtonMonochromatorMoveFineLess_clicked();
+    void on_pushButtonMonochromatorMoveFineMore_clicked();
+    void on_pushButtonMonochromatorMoveCoarseMore_clicked();
+    void on_pushButtonMonochromatorGoto_clicked();
 
 private:
     Ui::Ciclop *ui;
